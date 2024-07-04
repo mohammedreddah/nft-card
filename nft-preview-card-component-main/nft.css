@@ -1,0 +1,109 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: var(--Very_dark_blue-1);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+P{
+    font-size: 18px;
+    margin: 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very_dark_blue-2);
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px var(--Very_dark_blue-1);
+}
+.imgcard{
+    width: 250px;
+    border-radius: 10px;
+    align-self: center;
+}
+.title{
+    color: var(--White)
+}
+.difine,
+.target,
+.owner:last-child{
+    color: var(--Very_dark_blue-3);
+    
+}
+.tar{
+    color: var(--Cyan);
+    
+}
+ul .tar::marker{
+    content: url(icon-ethereum.svg);  
+}
+ul .target::marker{
+    content: url(icon-clock.svg);
+    vertical-align: center;
+}
+.time{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+.owner{
+    display: flex;
+    align-items: center;
+}
+:root{
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very_dark_blue-1 : hsl(217, 54%, 11%);/*(main BG)*/
+    --Very_dark_blue-2 : hsl(216, 50%, 16%);/*(card BG)*/
+    --Very_dark_blue-3 : hsl(215, 32%, 27%);/*(line)*/
+    --White: hsl(0, 0%, 100%);
+}
+.avatar {
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right:10px ;
+}
+span{
+    color: var(--White);
+}
+hr{
+    border: 1px solid var(--Very_dark_blue-3);
+    width: 100%;
+}
+.person{
+    font-size: 12px;
+}
+span,
+h4,
+.imgcard{
+    transition: color 0.3s;
+}
+span:hover,
+h4:hover,
+.imgcard:hover{
+    color: var(--Cyan);
+}
+.cover{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    opacity: 1;
+    background-color: var(--Cyan);
+    display: flex;
+            justify-content: center;
+            align-items: center;
+    position: fixed;
+    top: 14%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.cover:hover{
+    opacity: 0.9;
+}
